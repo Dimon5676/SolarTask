@@ -1,0 +1,15 @@
+<table class="table table-hover">
+  <tr *ngFor="let task of service.list">
+    <td (click)="populateForm(task)">
+      <h5>{{task.title}}</h5>
+      {{task.description}}
+      <br>
+      <i>{{task.deadLine}}</i>
+    </td>
+<!--    <td (click)="populateForm(task)">{{task.description}}</td>-->
+<!--    <td (click)="populateForm(task)">{{task.deadLine}}</td>-->
+    <td class="delete">
+      <i class="far fa-trash-alt fa-lg text-danger" (click)="onDelete(task.id)"></i>
+    </td>
+  </tr>
+</table>

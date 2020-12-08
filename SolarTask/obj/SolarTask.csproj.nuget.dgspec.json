@@ -1,0 +1,77 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/dmitry/RiderProjects/SolarTask/SolarTask/SolarTask.csproj": {}
+  },
+  "projects": {
+    "/Users/dmitry/RiderProjects/SolarTask/SolarTask/SolarTask.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/dmitry/RiderProjects/SolarTask/SolarTask/SolarTask.csproj",
+        "projectName": "SolarTask",
+        "projectPath": "/Users/dmitry/RiderProjects/SolarTask/SolarTask/SolarTask.csproj",
+        "packagesPath": "/Users/dmitry/.nuget/packages/",
+        "outputPath": "/Users/dmitry/RiderProjects/SolarTask/SolarTask/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/dmitry/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "MySql.Data.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.22, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

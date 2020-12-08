@@ -1,0 +1,39 @@
+<form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+  <input type="hidden" name="id" [value]="service.formData.id">
+  <div class="form-group">
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <div class="input-group-text bg-white">
+          <i class="fas fa-heading" [class.green-icon]="title.valid" [class.red-icon]="title.invalid && title.touched"></i>
+        </div>
+      </div>
+      <input name="title" #title="ngModel" [(ngModel)]="service.formData.title" class="form-control"
+             placeholder="Заголовок" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <div class="input-group-text bg-white">
+          <i class="fas fa-audio-description"  [class.green-icon]="CardNumber.valid" [class.red-icon]="CardNumber.invalid && CardNumber.touched"></i>
+        </div>
+      </div>
+      <input name="description" #description="ngModel" [(ngModel)]="service.formData.description"
+             class="form-control" placeholder="Описание" aria-multiline="true" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <div class="input-group-text bg-white">
+          <i class="fas fa-calendar-alt"  [class.green-icon]="CardNumber.valid" [class.red-icon]="CardNumber.invalid && CardNumber.touched"></i>
+        </div>
+      </div>
+      <input type="date" name="deadLine" #CardNumber="ngModel" [(ngModel)]="service.formData.deadLine"
+             class="form-control" placeholder="Deadline date DD/MM/YYYY" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <button class="btn btn-success btn-lg btn-block" type="submit" [disabled]="form.invalid"><i class="fas fa-database"></i> Submit</button>
+  </div>
+</form>

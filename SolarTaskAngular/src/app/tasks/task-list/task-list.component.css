@@ -1,0 +1,13 @@
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+td {
+  word-wrap: break-word;
+}
+
+.delete {
+  display: flex;
+  justify-content: center;
+}
